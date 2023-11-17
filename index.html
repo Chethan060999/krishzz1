@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>birthday</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #222;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #video-container {
+      position: relative;
+    }
+
+    #birthday-text {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      font-weight: bold;
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #ff8a00, #e52e71, #fa0094);
+      background-size: 200% 200%;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: rainbowText 4s linear infinite;
+    }
+
+    @keyframes rainbowText {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    #video {
+      width: 880px;
+      height: 620px;
+      border: 2px solid white;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="video-container">
+    <div id="birthday-text">Happy Birthday Kishan!</div>
+    <video id="video" controls>
+      <!-- Replace 'your_video_location.mp4' with the actual path to your video -->
+      <source src="C:\Users\giris\OneDrive\Desktop\video.htlm\abc.mp4" content type="video/mp4">
+    </video>
+  </div>
+
+</body>
+</html>
